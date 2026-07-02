@@ -10,7 +10,8 @@
 > ⚠️ **Scope note before anything else:** This document was requested with a large template that also asks about *anti-phishing*, *email scanning*, and *Chrome saved-password* features. **This project does not include any of those.** `sanitizer` is a **local file/data destruction and forensic-sanitization CLI tool** — it has nothing to do with phishing detection, email, or browsers. Every phishing/email/password-related heading below is explicitly marked **N/A — Not part of this project** rather than filled with invented content. If you actually meant your separate phishing-detection project ("RedFlag")
 
 ---
-# 📷 ![Screenshot](https://github.com/SyedShaheerHussain/Secure-File-Shredder-and-Data-Sanitization-Framework-Rust-CLI/blob/main/sanitizer/1.png)
+# 📷 Screenshot
+![Screenshot](https://github.com/SyedShaheerHussain/Secure-File-Shredder-and-Data-Sanitization-Framework-Rust-CLI/blob/main/sanitizer/1.png)
 
 ## 📑 Table of Contents
 
