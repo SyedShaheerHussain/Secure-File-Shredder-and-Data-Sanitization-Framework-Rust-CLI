@@ -1,4 +1,4 @@
-# 🛡️ sanitizer — Secure File Shredder & Data Sanitization Framework
+# 🛡️ Sanitizer — Secure File Shredder & Data Sanitization Framework
 
 **Production-grade, cross-platform, command-line data destruction tool written in 100% Rust.**
 
