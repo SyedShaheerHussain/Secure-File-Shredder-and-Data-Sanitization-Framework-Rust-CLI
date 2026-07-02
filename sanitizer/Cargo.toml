@@ -1,0 +1,49 @@
+[package]
+name = "sanitizer"
+version = "1.0.0"
+edition = "2021"
+authors = ["Secure Data Sanitization Project"]
+description = "Production-grade cross-platform secure file shredder and data sanitization framework"
+license = "MIT"
+
+[[bin]]
+name = "sanitizer"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "=4.4.18", features = ["derive", "cargo", "env"] }
+rand = "=0.8.5"
+aes-gcm = "=0.10.3"
+chacha20poly1305 = "=0.10.1"
+argon2 = "=0.5.3"
+base64ct = "=1.6.0"
+sha2 = "=0.10.8"
+blake3 = "=1.5.1"
+hmac = "=0.12.1"
+serde = { version = "=1.0.197", features = ["derive"] }
+serde_json = "=1.0.114"
+walkdir = "=2.5.0"
+rayon = "=1.8.1"
+rayon-core = "=1.12.1"
+indicatif = "=0.17.8"
+colored = "=2.1.0"
+chrono = { version = "=0.4.35", features = ["serde"] }
+zeroize = { version = "=1.7.0" }
+anyhow = "=1.0.80"
+thiserror = "=1.0.57"
+uuid = { version = "=1.7.0", features = ["v4", "serde"] }
+hex = "=0.4.3"
+sysinfo = "=0.30.5"
+num_cpus = "=1.16.0"
+crossbeam-channel = "=0.5.11"
+ctrlc = "=3.4.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+opt-level = 0
